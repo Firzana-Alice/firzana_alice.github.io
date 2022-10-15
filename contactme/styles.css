@@ -1,0 +1,106 @@
+html {
+  background-color: #f2a233;
+  font-family: Arial, Helvetica, sans-serif;
+}
+Or find more about my collaborations/projects/skills {
+  padding: 20px;
+}
+
+header {
+  color: #fff;
+}
+
+h1 {
+  text-align: center;
+}
+
+h2 {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  background-color: #ce5a04;
+  color: #fff;
+  font-size: 1rem;
+  text-align: center;
+  padding: 5px;
+  margin: 0px;
+}
+
+form {
+  background-color: #fff;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  padding: 10px;
+}
+
+label {
+  font-weight: bold;
+  color: #ce5a04;
+}
+
+input {
+  box-sizing: border-box;
+  border: 1px solid #ebeeef;
+  background-color: #f9fafa;
+  width: 100%;
+}
+
+textarea {
+  box-sizing: border-box;
+  border: 1px solid #ebeeef;
+  background-color: #f9fafa;
+  width: 100%;
+}
+
+#form-wrapper {
+  padding: 20px;
+  color: #ce5a04;
+}
+.form-item {
+  width: 100%;
+  display: block;
+  padding: 5px 0px 5px 0px;
+}
+
+button {
+  width: 97%;
+  background-color: #0d97ac;
+  border: none;
+  color: #fff;
+  text-align: center;
+}
+
+input,
+button {
+  width: 100%;
+  font-size: 1rem;
+  border-radius: 2px;
+}
+@media (min-width: 600px) {
+  main {
+  }
+  header {
+    display: flex;
+    width: 95%;
+  }
+  .form-wrapper {
+    display: flex;
+    width: 100%;
+  }
+  .row {
+    width: (100%/2px);
+  }
+}
+@media (min-width: 900px) {
+  #form.wrapper {
+    display: flex;
+  }
+  main {
+    width: (100%/2px);
+  }
+  header {
+  }
+  div {
+    display: inline-block;
+    width: 100%;
+  }
+}

@@ -1,5 +1,11 @@
-all {
-  border: 1px grey;
+@import url("https://fonts.googleapis.com/css2?family=Mukta+Malar&family=Noto+Sans+JP&family=Noto+Sans:ital,wght@0,300;1,400&display=swap");
+html {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif, monospace;
+}
+
+* {
+  border: 1px solid grey;
 }
 body {
   background-color: #e0d8c3;
@@ -10,19 +16,26 @@ a {
   text-align: right;
 }
 img {
-  display: flex;
   border: #dda033 2px solid;
   border-radius: 50%;
-  align-self: center;
+  max-width: 30%;
+  margin: auto;
 }
 
 main {
-  display: inline-flex;
+  display: flex;
   padding: 20px;
   border: 2px black;
+  align-items: flex-end;
+  flex-wrap: wrap;
 }
 header {
-  display: inline-flex;
+  display: flex;
+  justify-content: space-between;
+}
+footer {
+  display: flex;
+  justify-content: space-between;
 }
 section {
   margin: 120px 0;
@@ -39,38 +52,37 @@ h1 {
   text-align: left;
 }
 h2 {
-  text-align: left;
+  text-align: center;
   color: #dda033;
   padding: 0 0 24px;
 }
 p {
   font-size: 1rem;
   line-height: 28px;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif, monospace;
   text-align: left;
   color: #e2532f;
+  flex-wrap: wrap;
 }
-.fizwrapper {
+
+#card.wrapper {
   display: inline-flex;
+  border-radius: 15%;
+  border: #0d97ac;
+  border-width: 2px;
 }
-div {
-  width: 30%;
+
+.card {
   margin: 5px;
 }
 
 .skillslistings {
   font-size: 1rem;
   color: #e2532f;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif, monospace;
 }
 
-.projectlistings {
+#project {
   font-size: 1rem;
   color: #e2532f;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif, monospace;
 }
 
 button {
@@ -89,4 +101,31 @@ button {
 button:hover {
   color: #fff;
   background: #885df1;
+}
+@media (min-width: 600px) {
+  main {
+    display: flex;
+    align-items: center;
+  }
+  header {
+    display: flex;
+    width: 95%;
+  }
+  #card.wrapper {
+    display: flex;
+    width: 100%;
+  }
+  .card {
+    width: (30%/2px);
+  }
+}
+@media (min-width: 900px) {
+  #card.wrapper {
+    display: flex;
+    width: 100%;
+    flex-wrap: nowrap;
+  }
+  .card {
+    width: 30%/3px;
+  }
 }
