@@ -1,11 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Mukta+Malar&family=Noto+Sans+JP&family=Noto+Sans:ital,wght@0,300;1,400&display=swap");
 html {
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif, monospace;
-}
-
-* {
-  border: 1px solid grey;
+  font-family: "Mukta Malar", sans-serif;
+  font-family: "Noto Sans", sans-serif;
+  font-family: "Noto Sans JP", sans-serif;
 }
 body {
   background-color: #e0d8c3;
@@ -16,7 +13,7 @@ a {
   text-align: right;
 }
 #zpic {
-  border: #dda033 2px solid;
+  border: #dda033 6px solid;
   border-radius: 50%;
   max-width: 30%;
   margin: auto;
@@ -64,6 +61,11 @@ p {
   flex-wrap: wrap;
 }
 
+ul {
+  list-style-type: circle;
+  padding-left: 10px;
+}
+
 #card.wrapper {
   display: inline-flex;
   border-radius: 15%;
@@ -85,22 +87,10 @@ p {
   color: #e2532f;
 }
 
-button {
-  border-radius: 25px;
-  margin: 0 auto;
-  display: block;
-  background-color: #fff;
-  border: 1px solid #885df1;
-  color: #885df1;
-  font-size: 16px;
-  line-height: 22px;
-  padding: 16px 24px;
-  text-decoration: none;
-  transition: all 200ms ease;
-}
-button:hover {
-  color: #fff;
-  background: #885df1;
+h1:hover,
+h2:hover,
+a:hover {
+  color: #0d97ac;
 }
 
 .socials {
