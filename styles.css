@@ -15,7 +15,7 @@ a {
   color: #e2532f;
   text-align: right;
 }
-img {
+#zpic {
   border: #dda033 2px solid;
   border-radius: 50%;
   max-width: 30%;
@@ -35,7 +35,7 @@ header {
 }
 footer {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 section {
   margin: 120px 0;
@@ -101,6 +101,16 @@ button {
 button:hover {
   color: #fff;
   background: #885df1;
+}
+
+.socials {
+  margin: auto;
+  max-width: 65%;
+}
+
+#inlogo {
+  padding-top: 10px;
+  max-width: 80%;
 }
 @media (min-width: 600px) {
   main {
